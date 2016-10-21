@@ -1,0 +1,40 @@
+#accordion
+{
+	
+}
+
+#accordion h3.head
+{ 
+	margin: 1px 0; padding: 5px 10px;
+	font-size: 17px; font-family: Tahoma; font-weight: normal; color: #fff;
+	background: #333; 
+	cursor: pointer;
+	
+	border-radius: 3px;
+	-o-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	
+	text-shadow: 1px 1px 0px #000;
+	-o-text-shadow: 1px 1px 0px #000;
+	-moz-text-shadow: 1px 1px 0px #000;
+	-webkit-text-shadow: 1px 1px 0px #000;
+}
+
+#accordion h3.active
+{
+	background: #369; 
+}
+
+#accordion div.block 
+{
+	padding: 10px; margin: 0;
+	font-size: 13px; font-family: Tahoma; font-weight: normal; color: #888;
+	background: #efefef;
+	
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	-o-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;	
+}

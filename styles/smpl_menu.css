@@ -1,0 +1,27 @@
+/* 
+    Document   : smpl_menu
+    Created on : 13.05.2012, 8:15:06
+    Author     : ADMIN
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.smpl_menu { float: left; clear: both; width: 220px; margin: 0 0 8px 0; padding: 0; background: #fff; list-style: none; }
+.smpl_menu li { margin: 0 0 2px 0; padding: 0; background: #fff; }
+.smpl_menu li a { display: block; width: 196px; padding: 7px 10px 7px 10px; margin: 0; background: #E3E3E3 url("/images/background_menu.jpg") 0 0 repeat-x; border-left: 4px solid #DBDBDB; font-weight: bold; }
+.smpl_menu li a:hover { color: #fff; border-left: 4px solid #373737; text-decoration: none; background: #444 url("/images/background_menu_active.jpg") 0 0 repeat-x; }
+.smpl_menu li a.active { color: #fff; border-left: 4px solid #373737; text-decoration: none; background: #444 url("/images/background_menu_active.jpg") 0 0 repeat-x; }
+.smpl_menu li ul { margin: 2px 0 2px 0; padding: 0; background: #fff url("/images/background_sub_fade.jpg") 0 0 repeat-x; }
+.smpl_menu li ul li { margin: 0; padding: 1px 0 1px 20px; background: transparent url("/images/bullet.jpg") 12px 12px no-repeat; }
+.smpl_menu li ul li a { background: none; border: 0; width: 176px; padding: 7px 10px 7px 10px; margin: 0; }
+.smpl_menu li ul li a:hover { border: 0; background: transparent; color: #245F97; }
+.smpl_menu li ul li a.active { border: 0; background: transparent; color: #666; }
+
+.smpl_menu li li ul { margin: 0; padding: 0; background: transparent; width: 200px; }
+.smpl_menu li li ul li { width: 180px; }
+.smpl_menu li li ul li a { width: 160px; }

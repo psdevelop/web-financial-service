@@ -1,0 +1,58 @@
+/* 
+    Document   : left_default_menu
+    Created on : 28.05.2012, 22:26:36
+    Author     : ADMIN
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#left_default_menu {
+	width: 300px;
+	border-style: solid solid none solid;
+	border-color: #677D92;
+	border-size: 0px;
+	border-width: 0px;
+	margin: 0px;
+        padding: 0px;
+        list-style: none;
+        color: #FFF;
+        text-align: left;
+	}
+	
+#left_default_menu li a {
+	height: 32px;
+  	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	height: 24px;
+	text-decoration: none;
+        margin: 5px;
+        padding: 5px;
+        color: #FFF;
+	}
+	
+#left_default_menu li a:link, #menu2 li a:visited {
+	color: #fff;
+	display: block;
+	margin: 5px;
+	padding: 8px 0 0 10px;
+	}
+	
+#left_default_menu li a:hover {
+	color: #283A50;
+	/*background: url(images/menu22.gif) 0 -32px;*/
+        background-color: #D1EBFF;
+	padding: 8px 0 0 10px;
+	}
+	
+#left_default_menu li a:active {
+	color: #283A50;
+	/*background: url(images/menu22.gif) 0 -64px;*/
+	background-color: #D1EBFF;
+        padding: 8px 0 0 10px;
+	}
+

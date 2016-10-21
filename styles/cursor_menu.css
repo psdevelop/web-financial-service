@@ -1,0 +1,80 @@
+/* 
+    Document   : cursor_menu
+    Created on : 13.05.2012, 9:02:14
+    Author     : ADMIN
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#cursor_menu {
+        font-family:verdana;
+        font-size:12px;
+        position:relative;
+        margin:0 auto;
+        width:100%;
+        text-align: left;
+    }
+     
+    #cursor_menu ul {
+        /* remove list style */
+        list-style:none;
+        padding:0;
+        margin:0;   
+         
+        /* set the layer position */
+        position:relative;
+        z-index:5;
+    }
+     
+        #cursor_menu li {
+            /* set the styles */
+            background:#ccc url(images/bg.gif) repeat-x 0 0;
+            padding:5px;
+            margin:2px;
+            cursor:pointer;
+            border:1px solid #ccc;
+        }
+         
+        #cursor_menu li:hover {
+            /* on hover, change it to this image */
+            background-image:url(images/bg_hover.gif) repeat-x 0 0;
+        }
+         
+        #cursor_menu li a {
+            text-decoration:none;   
+            color:#888;
+        }
+     
+     
+    #cursor_menu .block {
+        /* allow javascript to move the block */
+        position:absolute;
+        top:0;
+         
+        /* set the left position */
+        left:150px; 
+         
+        /* display above the #menu */
+        z-index:10;
+         
+        /* the image and the size */
+        background:transparent url(arrow.png) no-repeat top right;
+        width:39px;
+        padding:4px;
+        cursor:pointer;
+    }
+     
+    /* fast png fix */
+    * html .png{
+        position:relative;
+        behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "transparent.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true));
+    }

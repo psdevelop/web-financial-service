@@ -1,0 +1,38 @@
+/*===========================================
+���� �������� � ����� http://menu.ihtut.net/
+=============================================
+�������� ��� ������������ ������ �� �����.
+����������� �������� ���� � �����������.
+============================================*/
+
+ul#menu {list-style-type:none; margin:0; padding:0;}
+
+ul#menu li a{
+	color:#909090; /* ���� ���� � ������� ��������� */
+	background: url(images/vert_menu.png) no-repeat 0 0; /* ���� � ����������� */
+	text-decoration:none; 
+	width: 260px;
+	height: 55px;
+	display:block;
+	border:none;
+	text-shadow: #ddd 2px 2px 0; /* ���� ���� � ���� � ������� ��������� */	
+        vertical-align: middle;
+        font-size: 14px;
+}
+
+ul#menu li a:hover{
+	background-position: 50% 100%;
+	width: 260px;
+	height: 55px;
+	display:block;
+	color:#fff; /* ���� ���� � �������� ��������� */
+	text-shadow: #000 2px 2px 0;	/* ���� ���� � ���� � �������� ��������� */
+}
+
+ul#menu li a span{
+	font-family:sans-serif; /* ����� ���� */
+	font-size:18px; /* ������ ���� */
+	padding:17px 0 0 20px;
+	display:block;	
+        vertical-align: baseline;
+}

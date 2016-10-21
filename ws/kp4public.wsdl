@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<definitions name="kp4public" targetNamespace="urn:kp4public" xmlns:typens="urn:kp4public" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+    
+	<wsdl:types><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:kp4public"><xsd:element name="string" type="xsd:string"></xsd:element></xsd:schema></wsdl:types>
+	
+    <message name="getNewsList"/>
+	<message name="getNewsListResponse">
+		<part name="getNewsListReturn" type="xsd:anyType"/>
+	</message>
+	
+	<message name="getExchange">
+		<part name="code" type="xsd:integer"/>
+		<part name="date" type="xsd:string"/>
+	</message>
+	<message name="getExchangeResponse">
+		<part name="getExchangeReturn" type="xsd:float"/>
+	</message>
+	
+	<portType name="NewsPublicPortType">
+	
+		<operation name="getNewsList">
+			<documentation>
+				Retrievs all news
+			</documentation>
+			<input message="typens:getNewsList"/>
+			<output message="typens:getNewsListResponse"/>
+		</operation>
+
+	</portType>
+	
+	<binding name="NewsPublicBinding" type="typens:NewsPublicPortType">
+	
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="getNewsList">
+			<soap:operation soapAction="urn:NewsListAction"/>
+			<input>
+				<soap:body namespace="urn:kp4public" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</input>
+			<output>
+				<soap:body namespace="urn:kp4public" use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</output>
+		</operation>
+
+	</binding>
+	
+	<service name="kp4publicService">
+		<port name="NewsPublicPort" binding="typens:NewsPublicBinding">
+			<soap:address location="http://localhost/MyMoneyWEB/ws/"/>
+		</port>
+	</service>
+</definitions>
+

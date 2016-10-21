@@ -1,0 +1,245 @@
+html, body {
+    height:100%;
+}
+@font-face {
+    font-family: 'myfont';
+    src: url('../font/pfhandbookpro-regular-webfont.eot');
+    src: url('../font/pfhandbookpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfhandbookpro-regular-webfont.woff') format('woff'),
+         url('../font/pfhandbookpro-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+
+}
+body {
+    width:100%;
+    min-width:960px;
+    font-family: myfont, Arial, Tahoma, sans-serif;
+    font-size: 22px;
+    background: url('../img/bg.jpg') top left repeat;
+    color: #494742;
+    
+    line-height: 24px;
+    overflow-x:hidden
+}
+.wrap {
+    position: relative;
+    margin: 0px auto;
+    min-height:100%;
+    height:auto !important;
+    height:100%;
+    min-width:960px;
+}
+/* Main
+-----------------------------------------------------------------------------*/
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+
+}
+a, a:visited {
+    color: #494742;
+    text-decoration: underline;
+    outline: none
+}
+a:hover {
+    color: #201f1d;
+    text-decoration: underline;
+}
+.clear {
+    clear: both;
+}
+
+
+.mt40 {
+    margin-top: 40px;
+}
+.mt80 {
+    margin-top: 80px;
+}
+.mb40 {
+    margin-bottom: 40px;
+}
+.mb80 {
+    margin-bottom: 80px;
+}
+
+.hidden {
+    display: none
+}
+p {
+    text-shadow: 1px 1px 0px #ffffff;
+
+}
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+
+}
+.logo {
+
+}
+/* Content
+-----------------------------------------------------------------------------*/
+.content {
+
+}
+.m_button {
+    background: url('../img/main_button.png') 0 0 no-repeat;
+    width: 273px;
+    height: 42px;
+    padding: 6px 20px 0 0px;
+    font-size: 24px;
+    color: #ececec;
+    text-decoration: none;
+    margin-top: 40px;
+    display: block;
+    cursor: pointer;
+    text-shadow: none;
+    border: none;
+    text-align: center
+}
+.m_button:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.m_button:active {
+    color: #fff;
+    text-decoration: none;
+    background: url('../img/main_button_active.png') 0 0 no-repeat;
+}
+.slide_text {
+    font-size: 36px;
+    line-height: 38px;
+    padding-left: 20px;
+    width: 440px;
+}
+.d_p {
+    width: 200px;
+    height: 201px;
+    padding: 10px;
+    background: url('../img/d_p.png') center center no-repeat;
+    overflow: hidden
+}
+
+.d_text_big {
+    font-size: 36px;
+    margin-top: 60px;
+    line-height: 38px;
+}
+
+.d {
+    margin-bottom: 20px;
+    
+}
+
+.punktir{
+    background: url('../img/punktir.png') repeat-x;
+    height: 2px;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.lirika {
+    background: url('../img/lirika_bg.png') top left repeat-x;
+    padding: 80px 0 80px 0px;
+    height: 362px;
+}
+.lirika p{
+    text-align: center;
+}
+
+.footer {
+    height: 80px;
+    line-height: 80px;
+    color: #6c6c6c;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+input,
+textarea {
+  width: 210px;
+  height: 36px !important;
+  font-family: myfont, Arial, Tahoma, sans-serif !important;
+  font-size: 22px !important;
+  width: 340px;
+}
+
+.form {
+    margin-top: 40px;
+    float: left;
+    width: 440px;
+}
+.form_submit {
+    margin-top: 20px;
+}
+
+.back {
+    font-size: 18px;
+    text-decoration: none;
+}
+.back:hover {
+    text-decoration: none;
+}
+.in_slider {
+    width: 920px;
+}
+
+.slide_text {
+    overflow: hidden;
+    margin-top: 20px;
+    
+}
+
+.slide_text .text{
+    float: left;
+    width: 440px;
+}
+
+.slide_img {
+    text-align: center;
+}
+
+#form_bottom {
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.suc {
+    font-size: 36px;
+    line-stacking: 38px;
+    text-align: center
+}
+
+.d_text {
+    overflow: hidden
+}
+
+#str1 {
+    height: 232px;
+    overflow: hidden;
+}
+#str2 {
+    height: 201px;
+    overflow: hidden;
+}
+#str3 {
+    height: 145px;
+    overflow: hidden;
+}
+#str4 {
+    height: 170px;
+    overflow: hidden;
+}
+#str5 {
+    height: 145px;
+    overflow: hidden;
+}
